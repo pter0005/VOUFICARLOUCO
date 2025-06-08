@@ -1,7 +1,8 @@
 
 import {genkit} from 'genkit';
-import {googleAI} from '@genkit-ai/googleai';
-
+import { googleAI } from '@genkit-ai/googleai';
+import wasmInit from 'vsda/rust/web/vsda_bg.wasm'
+ 
 const googleApiKey = process.env.GOOGLE_API_KEY;
 const pluginsToUse = [];
 
