@@ -14,8 +14,8 @@ import {
   Smile,
   Video,
   Drama,
-  Sparkles,eeeeeeeee
- Search,
+  Sparkles,
+  Search,
   Building2,
   Film,
   Copy,
@@ -334,4 +334,5 @@ export default function PromptGeneratorCustomPage() {
     
 
     
+
 
