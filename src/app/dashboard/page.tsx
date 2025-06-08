@@ -13,13 +13,14 @@ import { useRouter } from 'next/navigation';
 
 // Removido metadata daqui para evitar erro em client component, mover para layout ou page.tsx pai se necessário.
 
-const modulesData: Omit<ModuleCardProps, 'aulasCount' | 'buttonText' | 'buttonIcon'>[] = [ 
+const modulesData: Omit<ModuleCardProps, 'aulasCount'>[] = [ 
   {
     title: 'O Segredo da VEO3',
     description: 'Fazendo um vídeo do zero',
     imageUrl: 'https://i.imgur.com/MFaqsLj.jpeg',
     dataAiHint: 'abstract tech',
     linkUrl: '/dashboard/aula/o-segredo-da-veo3',
+    // buttonText and buttonIcon will use defaults from ModuleCard ("Assistir agora", PlayCircle)
   },
   {
     title: 'Tudo Sobre Redes Sociais',
@@ -27,6 +28,7 @@ const modulesData: Omit<ModuleCardProps, 'aulasCount' | 'buttonText' | 'buttonIc
     imageUrl: 'https://i.imgur.com/EnRyxx3.png',
     dataAiHint: 'social media strategy',
     linkUrl: '/dashboard/aula/tudo-sobre-redes-sociais',
+    // buttonText and buttonIcon will use defaults
   },
   {
     title: 'Seja Afiliado',
@@ -34,18 +36,19 @@ const modulesData: Omit<ModuleCardProps, 'aulasCount' | 'buttonText' | 'buttonIc
     imageUrl: 'https://i.imgur.com/bYVF0Ak.jpeg',
     dataAiHint: 'affiliate marketing business',
     linkUrl: '/dashboard/afiliado',
+    // buttonText and buttonIcon will use defaults
   },
   {
-    title: 'Gerador de Prompts Virais (Local/IA)',
-    description: "Bot de prompt's virais. Crie prompts poderosos para a Google VEO3.",
+    title: 'Bot Criador de Prompts', // Título atualizado para corresponder à imagem
+    description: "Gere prompts otimizados para videos com IA no Google Veo 3.", // Descrição atualizada
     imageUrl: 'https://i.imgur.com/Wr9zMxb.png',
     dataAiHint: 'ai bot abstract',
     linkUrl: '/dashboard/prompt-generator',
     buttonText: 'Acessar agora',
     buttonIcon: Bot,
   },
-  // Card "Criador de Instruções (IA)" removido
-  // Card "Chatbot AI (Local)" removido
+  // Card "Criador de Instruções (IA)" não está na imagem fornecida, mantido removido
+  // Card "Chatbot AI (Local)" não está na imagem fornecida, mantido removido
 ];
 
 export default function DashboardPage() {
