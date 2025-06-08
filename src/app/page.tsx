@@ -1,9 +1,9 @@
+// src/app/page.tsx
+import { redirect } from 'next/navigation';
 
 export default function HomePage() {
-  return (
-    <div>
-      <h1>Olá Mundo - Teste de Raiz</h1>
-      <p>Se você está vendo isso, o servidor Next.js conseguiu renderizar a página raiz.</p>
-    </div>
-  );
+  redirect('/login');
+  // O redirect deve ser a última coisa, mas para garantir que o componente retorne algo,
+  // podemos adicionar um return null ou um fallback simples, embora não deva ser alcançado.
+  return null;
 }
