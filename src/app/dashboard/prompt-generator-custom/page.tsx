@@ -15,7 +15,7 @@ import {
   Video,
   Drama,
   Sparkles,eeeeeeeee
-  Search,
+ Search,
   Building2,
   Film,
   Copy,
