@@ -1,7 +1,8 @@
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-// import { Toaster } from "@/components/ui/toaster"; // Temporarily commented out
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         {children}
-        {/* <Toaster /> Temporarily commented out */}
+        <Toaster />
       </body>
     </html>
   );
